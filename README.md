@@ -5,12 +5,12 @@ Classifier uses ELU activation and converts the logits to multiclass probabiliti
 
 network pipeline ->
 
-z = wx + b
+`z = wx + b
 z = elu(z)
 z = batch_norm(z) (if batch norm is implemented)
 z = dropout(z)
 p = softmax(z)
-loss = crossentropy(y,p)
+loss = crossentropy(y,p)`
 
 # default hyperparameters ->
 
