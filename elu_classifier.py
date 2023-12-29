@@ -20,7 +20,7 @@ class ELUClassifier:
     loss = crossentropy(y,p)
     """
 
-    def __init__(self, lr=1e-2, epochs=100, l2=2e-4, batch_size=None, dropout_rate=0.04, batch_norm=False,
+    def __init__(self, lr=1e-2, epochs=100, l2=0, batch_size=None, dropout_rate=0.0, batch_norm=False,
                  end_lr=None, sgd_momentum=False, optimizer='sgd', patience=3):
         """
         :param lr: learning rate
